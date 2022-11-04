@@ -1,5 +1,5 @@
 # SignToSpeech
-CS-UY 4563 Machine Learning - Fall 2022 - Final Project
+CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
 ## Prompt: ...
@@ -32,21 +32,20 @@ The purpose is to be a sort of google-translate for various sign languages.
 >  Note: Due to my own time limitations I only intend to get through stages 1 and maybe 2 before my course ends...
       but the purpose of this is to spark future ideas and implementations
 
-### Potential Attributes:
-pos hand_center, pos finger_tips, pos finger-joints, pos wrist
-### Potential Extrapolation:
-hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative)
-
-
-### Added Tools: ...
-### More Data: ...
-### More Training: ...
-
 ## Implementations:
 Leap Motion Controller: https://www.ultraleap.com/product/leap-motion-controller/
 MediaPipe Classification: https://google.github.io/mediapipe/solutions/hands.html
                           https://www.roadtovr.com/google-hand-tracking-mediapipe/
                           https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html
+### Potential Attributes:
+pos hand_center, pos finger_tips, pos finger-joints, pos wrist
+### Potential Extrapolation:
+hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative)
+
+### Strategies to Implement:
+#### Added Tools: ...
+#### More Data: ...
+#### More Training: ...
 
 ## Other Examples:
 https://github.com/google/shuwa
