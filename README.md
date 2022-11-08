@@ -9,8 +9,7 @@ With the implementation of [tbd] hand tracking software, I plan to create a clas
 The purpose is to be a sort of google-translate for various sign languages.
 
 ### Phases:<ol>
-<li>Find a hand tracking software/device that can collect data
-            a) ideally should be able to export it to a usable format at the click of a button</li>
+<li>Find a hand tracking software/device that can collect data (ideally should be able to export it to a usable format at the click of a button)</li>
 <li>Define model and test parameters for current [stage]</li>
 <li>Set classification structure to word strings</li>
 <li>Use text-to-speech to say string out loud</li>
@@ -33,7 +32,7 @@ The purpose is to be a sort of google-translate for various sign languages.
       but the purpose of this is to spark future ideas and implementations
 
 ## Implementations:
-Leap Motion Controller: https://www.ultraleap.com/product/leap-motion-controller/
+Leap Motion Controller: https://www.ultraleap.com/product/leap-motion-controller/ <br>
 MediaPipe Classification: https://google.github.io/mediapipe/solutions/hands.html
                           https://www.roadtovr.com/google-hand-tracking-mediapipe/
                           https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html
