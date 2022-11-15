@@ -39,7 +39,7 @@ MediaPipe Classification: https://google.github.io/mediapipe/solutions/hands.htm
 ### Potential Attributes:
 pos hand_center, pos finger_tips, pos finger-joints, pos wrist
 ### Potential Extrapolation:
-hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks, weighted finger values (ex: pointer, thumb, and ring-finger dist from wrist), finger-tip dist from wrist, (landmark dist from wrist - avg landmark dist from wrist)
+hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks, weighted finger values (ex: pointer, thumb, and ring-finger dist from wrist), finger-tip dist from wrist, (landmark dist from wrist - avg landmark dist from wrist), can also define sign states based on one-hot encoded linear classifier isntead of logistic classifier
 
 ### Strategies to Implement:
 #### Added Tools: ...
