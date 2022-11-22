@@ -39,12 +39,24 @@ MediaPipe Classification: https://google.github.io/mediapipe/solutions/hands.htm
 ### Potential Attributes:
 pos hand_center, pos finger_tips, pos finger-joints, pos wrist
 ### Potential Extrapolation:
-hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks, weighted finger values (ex: pointer, thumb, and ring-finger dist from wrist), finger-tip dist from wrist, (landmark dist from wrist - avg landmark dist from wrist), can also define sign states based on one-hot encoded linear classifier isntead of logistic classifier, can also try one vs. rest and one vs. all
+hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks
 
-### Strategies to Implement:
-#### Added Tools: ...
-#### More Data: ...
-#### More Training: ...
+### Strategies to Implement: <ol>
+<li> landmark distance normalization: relative to wrist </li>
+<li> one hot encoding </li>
+<li> one vs. rest and one vs. all classifcation </li>
+<li> neural network implementation </li>
+<li> added convolutionary layers based on edge detection and invariant features like medial axis and euler number. </li>
+<li> weighted finger values (ex: more significant fingers like pointer, thumb, and ring-finger) </li>
+<li> ridge regression </li>
+</ol>
 
-## Other Examples:
-https://github.com/google/shuwa
+### Added Tools:<ol>
+<li>Facial Landmarks</li>
+<li>Sign speed and tonal recognition</li>
+</ol>
+
+## Inspiration:<ol>
+<li>https://iopscience.iop.org/article/10.1088/1741-2552/aba6da/meta</li>
+<li>https://github.com/google/shuwa</li>
+</ol>
