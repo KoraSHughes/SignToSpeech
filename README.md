@@ -6,7 +6,8 @@ By Kora S. Hughes
 
 ## Idea: ASL Sign to Speech
 With the implementation of [tbd] hand tracking software, I plan to create a classification algorithm of American Sign Language.
-The purpose is to be a sort of google-translate for various sign languages.
+The purpose is to reduce the need for human sign-langauge interpretors and overall increase the accessibility of communication for the deaf/hard-of-hearing community: a sort of google-translate for various sign languages.<br>
+The purpose of this algorithm is to build on existing sign language processing (SLP) techniques by testing the feasibility of signle-hand-centered classification.
 
 ### Phases:<ol>
 <li>Find a hand tracking software/device that can collect data (ideally should be able to export it to a usable format at the click of a button)</li>
@@ -53,10 +54,12 @@ hand/finger orientation vectors, finger flexion, wrist flextion, hand direction 
 
 ### Added Tools:<ol>
 <li>Facial Landmarks</li>
-<li>Sign speed and tonal recognition</li>
+<li>Tone recognition using sign velocity and jitter</li>
+<li>Tone recognition using facial sentiment analysis techniques</li>
 </ol>
 
 ## Inspiration:<ol>
 <li>https://iopscience.iop.org/article/10.1088/1741-2552/aba6da/meta</li>
+<li>https://github.com/sign-language-processing/sign-language-processing.github.io</li>
 <li>https://github.com/google/shuwa</li>
 </ol>
