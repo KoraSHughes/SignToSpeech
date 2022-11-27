@@ -52,7 +52,7 @@ hand/finger orientation vectors, finger flexion, wrist flextion, hand direction 
 <li> ridge regression </li>
 </ol>
 
-### Added Tools:<ol>
+### Potential Tools:<ol>
 <li>Facial Landmarks</li>
 <li>Tone recognition using sign velocity and jitter</li>
 <li>Tone recognition using facial sentiment analysis techniques</li>
