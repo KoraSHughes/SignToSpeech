@@ -1,6 +1,8 @@
-# SignToSpeech
+# SignToSpeech - Leap Motion Branch
 CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
+
+<br>AUTHOR'S NOTE: since my current operating system isnt compatible with leap motion I wont be able to develop this at the moment however I intend to build upon this in the future... <br>
 
 ## Abstract:
 SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
