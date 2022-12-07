@@ -118,6 +118,8 @@ The purpose of this algorithm is to build on existing sign language processing (
 <li>Tone recognition using facial sentiment analysis techniques</li>
 </ol>
 
+>  Note: Future testing is a must before claiming the logistic model is viable on a larger scale but given the accuracy of MediaPipe, I am confident that it will bring values to users
+
 ## Inspiration:<ol>
 <li>https://iopscience.iop.org/article/10.1088/1741-2552/aba6da/meta</li>
 <li>https://github.com/sign-language-processing/sign-language-processing.github.io</li>
