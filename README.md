@@ -22,7 +22,8 @@ The purpose of this algorithm is to build on existing sign language processing (
 
 ## Testing:<ol>
 <li>Overall Framework: one-hot encoded classification</li>
-<li>Classification was trained using logistic regression on validation set starting at [A vs. B], then a new sign was added after each successful implementation until the final set was [A vs. B vs. H vs. K vs. W vs. Y] </li>
+<li>Started with a logistic binary classification algorithm. Once that worked I used one vs. all multiclassification </li>
+<li>The multiclassifier was trained using logistic regression on validation set starting at [A vs. B], then a new sign was added after each successful implementation until the final set was [A vs. B vs. H vs. K vs. W vs. Y] </li>
 <li>Once the algorithm prooved it could classify all 6 signs, different strategies and algorithms were tested on the training set (ex: support vector machines, ridge regression, neural network implementaiton)</li>
 </ol>
 
@@ -100,6 +101,7 @@ The purpose of this algorithm is to build on existing sign language processing (
 <li>hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks </li> </ol>
 
 ### Strategies to Implement: <ol>
+<li> unsuperivsed analysis </li>
 <li> landmark distance normalization: relative to wrist </li>
 <li> one vs. rest and one vs. all classifcation </li>
 <li> larger data set </li>
