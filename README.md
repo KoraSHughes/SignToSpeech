@@ -2,12 +2,30 @@
 CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
-## Prompt: ...
+## Abstract:
+SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
+The purpose is to reduce the need for human sign-langauge interpretors and overall increase the accessibility of communication for the deaf/hard-of-hearing community: a google-translate for sign language.<br>
+The purpose of this algorithm is to build on existing sign language processing (SLP) techniques by testing the feasibility of single-hand-centered classification and evaulating which algorithms work the best.
 
-## Idea: ASL Sign to Speech
-With the implementation of [tbd] hand tracking software, I plan to create a classification algorithm of American Sign Language.
-The purpose is to reduce the need for human sign-langauge interpretors and overall increase the accessibility of communication for the deaf/hard-of-hearing community: a sort of google-translate for various sign languages.<br>
-The purpose of this algorithm is to build on existing sign language processing (SLP) techniques by testing the feasibility of signle-hand-centered classification.
+## Methods:
+### Data Collection:<ol>
+<li>signs collected with 2 different people of different hand shapes, posing with just their hands on a blank background</li>
+<li>testers were given an image of the intended sign prior to collection and were told to rotate their sign and relax it over the course of the video </li>
+<li>each video was around 10 seconds and 3 snap shots of said video were taken every elapsed second via the data_gatherer file</li>
+<li>key landmarks of hand positions were taken from each image as part of preprocessing</li>
+</ol>
+
+### Packages: <ol>
+<li>MediaPipe Classification: [https://google.github.io/mediapipe/solutions/hands.html, https://www.roadtovr.com/google-hand-tracking-mediapipe/https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html ]</li>
+</ol>
+
+
+## Testing:<ol>
+<li>Overall Framework: one-hot encoded classification</li>
+<li>Classification was trained using logistic regression on validation set starting at [A vs. B], then a new sign was added after each successful implementation until the final set was [A vs. B vs. H vs. K vs. W vs. Y] </li>
+<li>Once the algorithm prooved it could classify all 6 signs, different strategies and algorithms were tested on the training set (ex: support vector machines, ridge regression, neural network implementaiton)</li>
+</ol>
+
 
 ### Phases:<ol>
 <li>Find a hand tracking software/device that can collect data (ideally should be able to export it to a usable format at the click of a button)</li>
@@ -32,24 +50,64 @@ The purpose of this algorithm is to build on existing sign language processing (
 >  Note: Due to my own time limitations I only intend to get through stages 1 and maybe 2 before my course ends...
       but the purpose of this is to spark future ideas and implementations
 
-## Implementations:
-Leap Motion Controller: https://www.ultraleap.com/product/leap-motion-controller/ <br>
-MediaPipe Classification: https://google.github.io/mediapipe/solutions/hands.html
-                          https://www.roadtovr.com/google-hand-tracking-mediapipe/
-                          https://ai.googleblog.com/2019/08/on-device-real-time-hand-tracking-with.html
-### Potential Attributes:
-pos hand_center, pos finger_tips, pos finger-joints, pos wrist
-### Potential Extrapolation:
-hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks
+
+
+## Results:
+### Logistic Regression based Classification:<ol>
+<li>[tbd]</li>
+</ol>
+
+#### Adding Support Vector Machines:<ol>
+<li>[tbd]</li>
+</ol>
+
+#### Adding ridge regression:<ol>
+<li>[tbd]</li>
+</ol>
+
+
+### Neural Network:<ol>
+<li>[tbd]</li>
+</ol>
+
+#### changing number of update iterations:<ol>
+<li>[tbd]</li>
+</ol>
+
+#### changing network structure: initial=[]<ol>
+<li>added layers: [tbd]</li>
+<li>added neurons: [tbd]</li>
+</ol>
+
+#### changing activation functions:<ol>
+<li>sigmoid: [tbd]</li>
+<li>ReLU: [tbd]</li>
+<li>TanH: [tbd]</li>
+</ol>
+
+#### Adding ridge regression:<ol>
+<li>[tbd]</li>
+</ol>
+                          
+## Future Research:
+### Implementations:<ol>
+<li>Leap Motion Controller: https://www.ultraleap.com/product/leap-motion-controller/</li>
+<li>Haptic Feedback Devices for sign language learning</li>
+</ol>
+
+### Additional Attributes:<ol>
+<li>pos hand_center, pos finger_tips, pos finger-joints, pos wrist </li>
+<li>hand/finger orientation vectors, finger flexion, wrist flextion, hand direction (wrist-relative), max vert/horiz dist between landmarks </li> </ol>
 
 ### Strategies to Implement: <ol>
 <li> landmark distance normalization: relative to wrist </li>
-<li> one hot encoding </li>
 <li> one vs. rest and one vs. all classifcation </li>
-<li> neural network implementation </li>
+<li> larger data set </li>
+<li> more, diverse hands, and hand signs </li>
+<li> hand signs from regular users ** </li>
+<li> more diverse backgrounds </li>
 <li> added convolutionary layers based on edge detection and invariant features like medial axis and euler number. </li>
 <li> weighted finger values (ex: more significant fingers like pointer, thumb, and ring-finger) </li>
-<li> ridge regression </li>
 </ol>
 
 ### Potential Tools:<ol>
