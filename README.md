@@ -64,7 +64,8 @@ The purpose of this algorithm is to build on existing sign language processing (
 </ol>
 
 #### Adding ridge regression:<ol>
-<li>[tbd]</li>
+<li>L2 normalization </li>
+<li>L1 normalization </li>
 </ol>
 
 
