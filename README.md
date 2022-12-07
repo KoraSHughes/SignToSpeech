@@ -55,7 +55,8 @@ The purpose of this algorithm is to build on existing sign language processing (
 
 ## Results:
 ### Logistic Regression based Classification:<ol>
-<li>[tbd]</li>
+<li>baseline logistic regression did extremely well, achieving perfect accuracy for most trials with a learning rate of around 0.25</li>
+<li>any added ridge regression term made it a decent amount worse so those were avoided</li>
 </ol>
 
 #### Adding Support Vector Machines:<ol>
@@ -68,26 +69,24 @@ The purpose of this algorithm is to build on existing sign language processing (
 
 
 ### Neural Network:<ol>
-<li>[tbd]</li>
-</ol>
-
-#### changing number of update iterations:<ol>
-<li>[tbd]</li>
+<li>Neural Network trained classification tended to bottom out at around 2k-5k iterations</li>
+<li>Generally it favored a lower learning rate of around 0.14</li>
 </ol>
 
 #### changing network structure: initial=[]<ol>
-<li>added layers: [tbd]</li>
-<li>added neurons: [tbd]</li>
+<li>added layers: added layers did slightly poorly at face value but did a decent amount better with a higher learning rate of around 0.4 and a lower number of neurons per hidden layer resulting in approximately 45% accuracy </li>
+<li>added neurons: relative to the 18 neuron hidden layer baseline I set, more neurons (about 25) did much better and less neurons did substantially worse</li>
 </ol>
 
 #### changing activation functions:<ol>
-<li>sigmoid: [tbd]</li>
-<li>ReLU: [tbd]</li>
-<li>TanH: [tbd]</li>
+<li>sigmoid: did decently well but only after around 3k training examples</li>
+<li>ReLU: did as well as sigmoid but with a fewer number of training examples (around 2k)</li>
+<li>TanH: took much longer than the other two to train and did worse</li>
 </ol>
 
 #### Adding ridge regression:<ol>
-<li>[tbd]</li>
+<li>Did surprisingly well, even with higher lambda values around 0.01</li>
+<li>Combined with a higher learning rate of 0.3, the algorithm achieved a cost of around 0.48 and accuracy of 74%</li>
 </ol>
                           
 ## Future Research:
