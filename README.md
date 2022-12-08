@@ -2,6 +2,8 @@
 CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
+<br><br> Paper: https://drive.google.com/drive/folders/1aX4qMsP50kXZ1YWlgIOgRAKdAsaaXnR_?usp=sharing <br>
+
 ## Abstract:
 SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
 The purpose is to reduce the need for human sign-langauge interpretors and overall increase the accessibility of communication for the deaf/hard-of-hearing community: a google-translate for sign language.<br>
@@ -27,17 +29,11 @@ The purpose of this algorithm is to build on existing sign language processing (
 <li>Once the algorithm prooved it could classify all 6 signs, different strategies and algorithms were tested on the training set (ex: support vector machines, ridge regression, neural network implementaiton)</li>
 </ol>
 
-
-### Phases:<ol>
-<li>Find a hand tracking software/device that can collect data (ideally should be able to export it to a usable format at the click of a button)</li>
-<li>Define model and test parameters for current [stage]</li>
-<li>Set classification structure to word strings</li>
-<li>Use text-to-speech to say string out loud</li>
-</ol>
-
-### Stages:<ol>
+### Stages: (present and future)<ol>
 <li>Classify static single-hand position from ASL alphabet</li>
 <li>Classify static single-hand position from ASL words</li>
+<li>Set classification structure to word strings</li>
+<li>Use text-to-speech to say string out loud</li>
 <li>2-hand signs</li>
 <li>Dynamic positions</li>
 <li>Real-time analysis/classification</li>
@@ -50,8 +46,6 @@ The purpose of this algorithm is to build on existing sign language processing (
 
 >  Note: Due to my own time limitations I only intend to get through stages 1 and maybe 2 before my course ends...
       but the purpose of this is to spark future ideas and implementations
-
-
 
 ## Results:
 ### Logistic Regression based Classification:<ol>
