@@ -2,7 +2,7 @@
 CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
-<br><br> Paper: https://drive.google.com/drive/folders/1aX4qMsP50kXZ1YWlgIOgRAKdAsaaXnR_?usp=sharing <br>
+Paper: https://drive.google.com/drive/folders/1aX4qMsP50kXZ1YWlgIOgRAKdAsaaXnR_?usp=sharing <br>
 
 ## Abstract:
 SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
