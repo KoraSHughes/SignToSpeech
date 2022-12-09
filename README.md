@@ -2,6 +2,9 @@
 CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
+Paper: https://drive.google.com/file/d/1MRkcKusUURi2TZ6j1qm3MHP3aWEFUX_O/view?usp=sharing <br>
+More Info: https://drive.google.com/drive/folders/1aX4qMsP50kXZ1YWlgIOgRAKdAsaaXnR_?usp=share_link <br>
+
 ## Abstract:
 SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
 The purpose is to reduce the need for human sign-langauge interpretors and overall increase the accessibility of communication for the deaf/hard-of-hearing community: a google-translate for sign language.<br>
@@ -27,17 +30,11 @@ The purpose of this algorithm is to build on existing sign language processing (
 <li>Once the algorithm prooved it could classify all 6 signs, different strategies and algorithms were tested on the training set (ex: support vector machines, ridge regression, neural network implementaiton)</li>
 </ol>
 
-
-### Phases:<ol>
-<li>Find a hand tracking software/device that can collect data (ideally should be able to export it to a usable format at the click of a button)</li>
-<li>Define model and test parameters for current [stage]</li>
-<li>Set classification structure to word strings</li>
-<li>Use text-to-speech to say string out loud</li>
-</ol>
-
-### Stages:<ol>
+### Stages: (present and future)<ol>
 <li>Classify static single-hand position from ASL alphabet</li>
 <li>Classify static single-hand position from ASL words</li>
+<li>Set classification structure to word strings</li>
+<li>Use text-to-speech to say string out loud</li>
 <li>2-hand signs</li>
 <li>Dynamic positions</li>
 <li>Real-time analysis/classification</li>
@@ -51,43 +48,41 @@ The purpose of this algorithm is to build on existing sign language processing (
 >  Note: Due to my own time limitations I only intend to get through stages 1 and maybe 2 before my course ends...
       but the purpose of this is to spark future ideas and implementations
 
-
-
 ## Results:
 ### Logistic Regression based Classification:<ol>
-<li>[tbd]</li>
+<li>baseline logistic regression did extremely well, achieving perfect accuracy for most trials with a learning rate of around 0.25</li>
+<li>any added ridge regression term made it a decent amount worse so those were avoided</li>
 </ol>
 
 #### Adding Support Vector Machines:<ol>
-<li>[tbd]</li>
+<li>linear, polynomial, and radial-basis kernel functions</li>
 </ol>
 
 #### Adding ridge regression:<ol>
-<li>[tbd]</li>
+<li>L2 normalization </li>
+<li>L1 normalization </li>
 </ol>
 
 
 ### Neural Network:<ol>
-<li>[tbd]</li>
-</ol>
-
-#### changing number of update iterations:<ol>
-<li>[tbd]</li>
+<li>Neural Network trained classification tended to bottom out at around 2k-5k iterations</li>
+<li>Generally it favored a lower learning rate of around 0.14</li>
 </ol>
 
 #### changing network structure: initial=[]<ol>
-<li>added layers: [tbd]</li>
-<li>added neurons: [tbd]</li>
+<li>added layers: added layers did slightly poorly at face value but did a decent amount better with a higher learning rate of around 0.4 and a lower number of neurons per hidden layer resulting in approximately 45% accuracy </li>
+<li>added neurons: relative to the 18 neuron hidden layer baseline I set, more neurons (about 25) did much better and less neurons did substantially worse</li>
 </ol>
 
 #### changing activation functions:<ol>
-<li>sigmoid: [tbd]</li>
-<li>ReLU: [tbd]</li>
-<li>TanH: [tbd]</li>
+<li>sigmoid: did decently well but only after around 3k training examples</li>
+<li>ReLU: did as well as sigmoid but with a fewer number of training examples (around 2k)</li>
+<li>TanH: took much longer than the other two to train and did worse</li>
 </ol>
 
 #### Adding ridge regression:<ol>
-<li>[tbd]</li>
+<li>Did surprisingly well, even with higher lambda values around 0.01</li>
+<li>Combined with a higher learning rate of 0.3, the algorithm achieved a cost of around 0.48 and accuracy of 74%</li>
 </ol>
                           
 ## Future Research:
@@ -117,6 +112,8 @@ The purpose of this algorithm is to build on existing sign language processing (
 <li>Tone recognition using sign velocity and jitter</li>
 <li>Tone recognition using facial sentiment analysis techniques</li>
 </ol>
+
+>  Note: Future testing is a must before claiming the logistic model is viable on a larger scale but given the accuracy of MediaPipe, I am confident that it will bring values to users
 
 ## Inspiration:<ol>
 <li>https://iopscience.iop.org/article/10.1088/1741-2552/aba6da/meta</li>
