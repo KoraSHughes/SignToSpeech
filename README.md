@@ -3,7 +3,7 @@ CS-UY 4563 Machine Learning - Fall 2022 - Final Project<br>
 By Kora S. Hughes
 
 Paper: https://drive.google.com/file/d/1nJ3Z_PBy9S_16MsACai9DAsWS7SY6e9d/view?usp=sharing <br>
-More Info: https://drive.google.com/drive/folders/1aX4qMsP50kXZ1YWlgIOgRAKdAsaaXnR_?usp=share_link <br>
+More Info: https://www.linkedin.com/posts/korashughes_algorithmic-classification-models-for-sign-activity-7007154391946305536-T1fT?utm_source=share&utm_medium=member_desktop <br>
 
 ## Abstract:
 SignToSpeech builds on Google's MediaPipe hand tracking software and delivers a machine learning based translation software for American Sign Language (ASL) users.
