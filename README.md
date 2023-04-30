@@ -1,5 +1,5 @@
 # SignToSpeech
-Personal Project Using CS-UY 4563 Machine Learning
+> a personal project combining skills from CS-UY 4563 Machine Learning, CS-UY 3943 Mining Massive Datasets, CS-GY 6313 Information Visualization, and CS-UY 3943 Machine Learning Visualization
 By Kora S. Hughes
 
 Paper: https://drive.google.com/file/d/1nJ3Z_PBy9S_16MsACai9DAsWS7SY6e9d/view?usp=sharing <br>
