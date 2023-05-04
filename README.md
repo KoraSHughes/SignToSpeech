@@ -22,6 +22,12 @@ The purpose of this algorithm is to build on existing sign language processing (
 ### SLAP (Sign Language Abstraction Picture) Visualizations:
 https://observablehq.com/d/790228ffa9ae0f19
 
-
-## How To Use:
-refrence bottom of code file for method -- input file dir 
+## Project Overview:
+- data_gatherer.ipynb converts videos to images for homebrew training/testing data ('testing/images' && 'training/images')
+- SignToSpeech.ipynb processes the images into landmarks and applies algorithms to them, outputting various results into '/results/'
+  - best_hands contains the images and data of hands that the best algorithm chosen by SignToSpeech.ipynb is most confident in
+  - processed_train_data files contain landmark data for training data
+  - predicted_matrix contains the results of the algorithms tried with overview files for hyperparameters chosen
+  - hand_metadata contains frequency dictionaries of what signs exist in the training/testing data for both the kaggle and homebrew sets
+  - homebrew-test/train contains old data and tests run as a proof of concept before I decided to fully pursue this project 
+- hand_landmarker.ipynb takes the most confident sign images in ('results/best_hands') and overlays landmarks on top of them ('results/best_hands/with-landmarks')
