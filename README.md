@@ -3,6 +3,7 @@
 By Kora S. Hughes
 
 Paper: https://drive.google.com/file/d/1nJ3Z_PBy9S_16MsACai9DAsWS7SY6e9d/view?usp=sharing <br>
+SLAP (Sign Language Abstraction Picture) Visualizations: https://observablehq.com/d/790228ffa9ae0f19
 More Info: https://www.linkedin.com/posts/korashughes_algorithmic-classification-models-for-sign-activity-7007154391946305536-T1fT?utm_source=share&utm_medium=member_desktop <br>
 
 ## Abstract:
@@ -15,12 +16,10 @@ The purpose of this algorithm is to build on existing sign language processing (
 - Kaggle Training Set: https://www.kaggle.com/datasets/ardamavi/27-class-sign-language-dataset
 
 ## Results Overview:
-- Logistic Regresion:
-- Support Vector Machines:
-- Neural Networks
+- Logistic Regresion: 68.74%
+- Support Vector Machines: 82.04%
+- Neural Networks: 84.80%
 
-### SLAP (Sign Language Abstraction Picture) Visualizations:
-https://observablehq.com/d/790228ffa9ae0f19
 
 ## Project Overview:
 - data_gatherer.ipynb converts videos to images for homebrew training/testing data ('testing/images' && 'training/images')
