@@ -1,8 +1,7 @@
 # SignToSpeech
 > a personal project combining skills from CS-UY 4563 Machine Learning, CS-UY 3943 Mining Massive Datasets, CS-GY 6313 Information Visualization, and CS-UY 3943 Machine Learning Visualization
-By Kora S. Hughes
 
-Paper: https://drive.google.com/file/d/1nJ3Z_PBy9S_16MsACai9DAsWS7SY6e9d/view?usp=sharing <br>
+Paper: https://drive.google.com/file/d/1jCRoZ5L6qvB9x_d2S83m4dcnIvAPBilr/view?usp=sharing <br>
 SLAP (Sign Language Abstraction Picture) Visualizations: https://observablehq.com/d/790228ffa9ae0f19 <br>
 More Info: https://www.linkedin.com/posts/korashughes_algorithmic-classification-models-for-sign-activity-7007154391946305536-T1fT?utm_source=share&utm_medium=member_desktop <br>
 
